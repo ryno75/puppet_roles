@@ -11,11 +11,11 @@
 
 ## Module Description
 
-This module defines our puppet server roles and which modules/classes/resources this role comprised of.
+This module defines our puppet node roles.
 
 ## Setup
 
-include roles
+include roles::{role_name}
 
 ### What roles affects
 
@@ -33,11 +33,7 @@ Put the classes, types, and resources for customizing, configuring, and doing th
 
 E.g.
 ~~~
-class { roles: 
-  db_version  => '5.6',
-  db_name     => 'roles-prod',
-  db_server   => 'roles-db.example.com'
-}
+class { roles::bastion: }
 ~~~
 
 ## Reference
