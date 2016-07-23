@@ -16,10 +16,10 @@ class roles::base::linux {
 }
 
 class roles::bastion {
-  include profile::bastion
+  include profiles::bastion
 }
 
 class roles::wiki {
-  include profile::wiki
+  include profiles::wiki
 }
 
