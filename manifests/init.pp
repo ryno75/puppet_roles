@@ -4,7 +4,7 @@
 # Instantiates puppet role classes
 #
 class roles {
-  include profiles::base
+  include profiles
 }
 
 class roles::base {
